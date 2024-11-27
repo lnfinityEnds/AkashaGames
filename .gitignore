@@ -1,0 +1,13 @@
+# Archivos y carpetas de configuración de Eclipse
+.project
+.classpath
+.settings/
+
+# Archivos de salida generados por Eclipse
+bin/
+build/
+
+# Archivos de configuración específicos de usuario
+*.prefs
+*.properties
+*.launch
