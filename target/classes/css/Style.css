@@ -1,0 +1,38 @@
+.Fondobase{
+    -fx-background-color:  #1A2433;
+}
+
+.root-pane {
+    -fx-background-color: #1A2433;
+}
+/**/
+
+.title {
+    -fx-font-size: 50px;
+    -fx-font-family: "Arial";
+    -fx-text-fill: white;
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial";
+}
+
+.login-container {
+    -fx-padding: 20;
+}
+
+.action-button {
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial";
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #2D3E50;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 5 15;
+}
+
+.action-button:hover {
+    -fx-background-color: #3A4F67;
+}
