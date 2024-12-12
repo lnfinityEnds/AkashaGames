@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Avatar?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="panelFondo" prefHeight="1080.0" prefWidth="1920.0" styleClass="Fondobase" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.LoginController">
+    <center>
+        <VBox alignment="CENTER" maxHeight="1000.0" maxWidth="1500.0" spacing="40" styleClass="login-container">
+            <Label styleClass="title" text="Akasha Games" />
+            <GridPane alignment="CENTER" hgap="20" vgap="20">
+                <!-- Primera columna de etiquetas -->
+                <Label styleClass="label" text="Nombre" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <Label styleClass="label" text="Apellidos" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <Label styleClass="label" text="Edad" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <Label styleClass="label" text="Género" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <Label styleClass="label" text="Teléfono" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                <Label styleClass="label" text="Dirección" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                <Label styleClass="label" text="Email" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+
+                <!-- Segunda columna de campos de texto -->
+                <TextField fx:id="nameField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <TextField fx:id="surnameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <ChoiceBox fx:id="ageChoiceBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <ChoiceBox fx:id="genderChoiceBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <TextField fx:id="phoneField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <TextField fx:id="addressField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <TextField fx:id="emailField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+                <!-- Tercera columna de etiquetas y campos adicionales -->
+                <Label styleClass="label" text="Usuario" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                <TextField fx:id="usernameField" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+                <Label styleClass="label" text="Contraseña" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <PasswordField fx:id="passwordField" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <Label styleClass="label" text="Repite Contraseña" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <PasswordField fx:id="confirmPasswordField" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <Label styleClass="label" text="Imagen Perfil" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <Avatar fx:id="avatar" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+
+                <!-- Botón para crear cuenta -->
+                <Button fx:id="createAccountButton" prefHeight="50.0" prefWidth="200.0" styleClass="action-button" text="Crear Cuenta Nueva" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="7" />
+            <columnConstraints>
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+            </rowConstraints>
+            </GridPane>
+        </VBox>
+    </center>
+</BorderPane>
